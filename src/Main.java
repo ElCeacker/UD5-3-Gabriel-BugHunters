@@ -38,7 +38,7 @@ public class Main {
                     biblio.showCatalog();
                     int posicion = sc.nextInt();
                     usuario.obtenerLibro(posicion, biblio);
-
+                    sc.nextLine();
                     break;
                 case "3":
                     System.out.println("Obteniendo libro aleatorio");
@@ -55,6 +55,7 @@ public class Main {
                     int libroParaDevolver = sc.nextInt();
                     String tituloLibro = usuario.obtenerTituloLibro(libroParaDevolver);
                     usuario.devolverLibro(tituloLibro, biblio);
+                    sc.nextLine();
                     break;
                 case "Q":
                     salir = true;
