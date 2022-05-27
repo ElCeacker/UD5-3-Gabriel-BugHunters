@@ -29,7 +29,7 @@ public class Main {
 
             String opcion = sc.nextLine();
 
-            switch(opcion) {
+            switch (opcion) {
                 case "1":
                     biblio.showCatalog();
                     break;
@@ -38,6 +38,7 @@ public class Main {
                     biblio.showCatalog();
                     int posicion = sc.nextInt();
                     usuario.obtenerLibro(posicion, biblio);
+
                     break;
                 case "3":
                     System.out.println("Obteniendo libro aleatorio");
